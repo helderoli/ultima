@@ -1,0 +1,88 @@
+/* NAVBAR */
+.logo{width: 50px;}
+
+
+/* MAIN */
+
+.btn1{text-decoration: none;}
+.btn1:hover{
+    text-decoration: underline;
+}
+.card:hover{transform: scale(1.1);}
+
+.linkAnuncio{color: white; }
+
+
+
+/* FOOTER */
+footer{background-color: #0056D2;}
+
+.linkFooter{text-decoration: none;
+color: aliceblue;}
+
+.linkFooter:hover{
+    color: #000000;
+}
+.img2{width: 100px;}
+
+
+
+@media screen and (max-width: 1050px){
+    footer section{display: flex; flex-direction: column;}
+    .fontFooter{order: 3;}
+    .logoFooter{order: 2;}
+    .politica{gap: 8px;}
+    
+}
+
+.mainLogin{
+    height: 90vh;
+}
+
+
+.Login{width: 90%;}
+.Login:hover{background-color: #fff; color: #0056D2;}
+
+.btncadastro{background-color: #07a80ff6; width: 90%; color: #fff;}
+.btncadastro:hover{background-color:#fff; outline:1px solid #07a80ff6; color: #07a80ff6;}
+
+
+
+.final{
+    height: 70vh;
+}
+
+.finaldiv{height: 30vh;}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance:none;
+    visibility: hidden;
+    display: none;
+}
+
+.check{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: #080808;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+
+input[type="checkbox"]:checked ~.check{
+    background-color: #f8f8f8;
+    box-shadow: 0 0 0 1200px black;
+}
